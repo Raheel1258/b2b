@@ -3,8 +3,6 @@ import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import StarRatingComponent from "react-star-rating-component";
 import { FaCommentAlt, FaCheck } from "react-icons/fa";
 
-import checkIn from "../Images/check-in.png";
-import sendMessage from "../Images/send.png";
 import bookmark from "../Images/bookmark.png";
 import location from "../Images/location.png";
 import profileImage from "../Images/download.jpeg";
