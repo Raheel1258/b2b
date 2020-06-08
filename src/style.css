@@ -1,0 +1,282 @@
+.main-container{
+    min-height: 100%;
+    width: 100%;
+}
+
+.row_wrapper{
+    height: 100%;
+}
+
+.col-wrappper{
+ min-height: 100vh;
+background: #f4f3f2;
+}
+
+.partition_container{
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.partition_border{
+    border-bottom: 1px solid #cccccc;
+    width: 90%;
+}
+
+.img-container{
+    padding-top: 20px;
+}
+.partition-color{
+    font-weight: bold;
+    padding-right: 7px;
+    font-size: 11px;
+    color: #cccccc;
+}
+
+.address_container{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.address_main_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_container{
+    padding-bottom: 20px;
+    padding-top: 20px;  
+}
+
+.address_main_heading{
+    font-size: 15px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.info_container{
+    padding-top: 15px;
+}
+
+.full_address{
+    padding-bottom: 5px;
+    font-size: 13px;
+    padding-top: 5px;
+    color: #848080;
+}
+
+.address_status{
+    padding: 3px;
+    background: rgb(165, 233, 113);
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding-right: 6px;
+    padding-left: 5px;
+    color: rgb(82, 119, 54);
+}
+
+.list_option{
+    color: #212529;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* User Detail */
+.user-detail-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-detail-role{
+    margin-right: 15px;
+}
+.user-detail-city{
+    margin-right: auto;
+    display: flex;
+}
+
+.user-detail-city-image{
+    width: 15px;
+    height: 15px;
+}
+
+.user-detail-city-name{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #cccccc;
+    font-weight: 600;
+}
+
+.user-detail-bookmark{
+    display: flex;
+}
+
+.user-detail-bookmark-image{
+    width: 15px;
+    height: 15px;
+}
+
+.user-detail-ranking-container{
+    margin-top: 30px;
+}
+
+.user-detail-ranking-name{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cccccc;
+}
+
+.user-detail-ranking{
+    display:flex;
+    align-items: center;
+}
+
+.user-detail-message-container{
+    margin-top: 30px;
+    display: flex;
+    
+}
+.user-detail-message-box{
+    padding: 10px 20px;
+   color: rgb(82, 119, 54);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.user-detail-message-box:focus{
+    background-color: #B9DEED;
+    border: 1px solid transparent;
+    outline: none;
+    
+}
+
+.user_contact_btn{
+    order: 1px solid transparent;
+    background: rgb(165, 233, 113);   
+     border-radius: 6px;
+}
+
+.user-detail-message-side{
+    margin-left: 20px;
+
+}
+
+.user-detail-message-image{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.user-detail-tab-container{
+    margin-top: 40px;
+}
+
+.user-detail-tab-about{
+    margin-top: 30px;
+}
+
+.user-detail-contact-heading{
+    font-size: 14px;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+.user-detail-tab-about-info{
+    margin-top: 30px;
+}
+
+.user-detail-tab-data{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-detail-tab-data-heading{
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+}
+
+.user-detail-tab-data-record-blue{
+   color: rgb(82, 119, 54);
+}
+
+.user-detail-tab-data-record{
+    color: rgb(82, 119, 54);
+}
+
+.user-detail-ranking .dv-star-rating-star{
+color: rgb(82, 119, 54)!important;
+    
+}
+
+.user-detail-ranking .dv-star-rating-empty-star{
+    color: #B9DEED !important; 
+}
+
+.busines-type{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.nav-tabs:focus{
+    border: none !important;
+}
+
+
+/* Tab Customization */
+.user-detail-tab-container .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-bottom: 1px solid blue;
+}
+
+.user-detail-tab-container .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-bottom: 1px solid rgb(82, 119, 54)!important;
+    border: none;
+    border-bottom: 1px solid rgb(82, 119, 54)!important;
+}
+
+.nav-link.active{
+    color: #527736 !important;
+}
+
+.nav-link{
+    color: #cccccc !important;
+}
+@media only screen and (max-width: 37.5em){
+    .user-detail-name{
+        display: block;
+    }
+}
+
+@media (max-width:500px){
+    .personal_info_wrrapeer{
+        text-align: center;
+    }
+    .user_detail_m_setting{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .user-detail-ranking{
+        justify-content: center;
+    }
+    .user-detail-city{
+        justify-content: center;
+        margin-left: -25px;
+    }
+    .user-detail-bookmark{
+        justify-content: center;
+        margin-left: -25px;
+    }
+    .user_contact_btn {
+        border: none;
+        background-color: transparent;
+    }
+}
