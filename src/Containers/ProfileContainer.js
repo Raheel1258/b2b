@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
+import { Container, Row, Col, Tabs, Tab, Table, Form } from "react-bootstrap";
 import StarRatingComponent from "react-star-rating-component";
 import { FaCommentAlt, FaCheck } from "react-icons/fa";
 
@@ -37,11 +37,14 @@ class ProfileContainer extends Component {
 
               <div className="address_container">
                 <div>
-                <div className="address_main_container">
-                      <div className="busines-type">
-                        Bussiness type: <span style={{fontWeight:400,color:"#908C8C"}}>Whole Sale</span>
-                      </div>
+                  <div className="address_main_container">
+                    <div className="busines-type">
+                      Bussiness type:{" "}
+                      <span style={{ fontWeight: 400, color: "#908C8C" }}>
+                        Whole Sale
+                      </span>
                     </div>
+                  </div>
                   <div>
                     <div className="address_main_container">
                       <div className="address_main_heading">
@@ -58,17 +61,6 @@ class ProfileContainer extends Component {
                   </div>
                 </div>
 
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
                 <div className="info_container">
                   <div>
                     <div className="address_main_container">
@@ -184,7 +176,6 @@ class ProfileContainer extends Component {
               {/* Tabs */}
               <div className="user-detail-tab-container">
                 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                  <Tab eventKey="home" title="Timeline"></Tab>
                   <Tab eventKey="profile" title="About">
                     <div className="user-detail-tab-about">
                       <div className="user-detail-contact">
@@ -260,6 +251,98 @@ class ProfileContainer extends Component {
                       </div>
                     </div>
                   </Tab>
+
+                    <Tab eventKey="home" title="Stock Detail">
+                      <div>
+
+                      <Table responsive >
+                        <thead>
+                          <tr>
+                            <th className="crop_table_heading">Sr #</th>
+                            <th className="crop_table_heading">Crop name</th>
+                            <th className="crop_table_heading">Min qty stock</th>
+                            <th className="crop_table_heading">Min price</th>
+                            <th className="crop_table_heading">Bidding status</th>
+                            <th className="crop_table_heading">Date to open bidding</th>
+                            <th className="crop_table_heading">Change bidding status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td className="crop_table_data">1</td>
+                            <td className="crop_table_data">Wheat</td>
+                            <td className="crop_table_data">3680 KG</td>
+                            <td className="crop_table_data">128,800 RS</td>
+                            <td><div className="crop_active_status">Active</div></td>
+                            <td className="crop_table_data">6/17/2020</td>
+                            <td>
+                              <label class="crop_table_switch">
+                                <input type="checkbox"/>
+                                <span class="crop_table_slider round"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="crop_table_data">2</td>
+                            <td className="crop_table_data">Rice</td>
+                            <td className="crop_table_data">4000 KG</td>
+                            <td className="crop_table_data">128,800 RS</td>
+                            <td><div className="crop_pending_status">Pending</div></td>
+                            <td className="crop_table_data">6/16/2020</td>
+                            <td>
+                              <label class="crop_table_switch">
+                                <input type="checkbox"/>
+                                <span class="crop_table_slider round"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="crop_table_data">3</td>
+                            <td className="crop_table_data">Sugercane</td>
+                            <td className="crop_table_data">12000 KG</td>
+                            <td className="crop_table_data">200,800 RS</td>
+                            <td><div className="crop_active_status">Active</div></td>
+                            <td className="crop_table_data">6/15/2020</td>
+                            <td>
+                              <label class="crop_table_switch">
+                                <input type="checkbox"/>
+                                <span class="crop_table_slider round"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="crop_table_data">3</td>
+                            <td className="crop_table_data">Maize</td>
+                            <td className="crop_table_data">12000 KG</td>
+                            <td className="crop_table_data">20,800 RS</td>
+                            <td><div className="crop_pending_status">Pending</div></td>
+                            <td className="crop_table_data">6/14/2020</td>
+                            <td>
+                              <label class="crop_table_switch">
+                                <input type="checkbox"/>
+                                <span class="crop_table_slider round"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="crop_table_data">3</td>
+                            <td className="crop_table_data">Oilseeds</td>
+                            <td className="crop_table_data">100 KG</td>
+                            <td className="crop_table_data">28,800 RS</td>
+                            <td><div className="crop_active_status">Active</div></td>
+                            <td className="crop_table_data">6/13/2020</td>
+                            <td>
+                              <label class="crop_table_switch">
+                                <input type="checkbox"/>
+                                <span class="crop_table_slider round"></span>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                      </div>
+
+                    </Tab>
                 </Tabs>
               </div>
             </div>

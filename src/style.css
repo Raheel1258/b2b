@@ -249,11 +249,109 @@ color: rgb(82, 119, 54)!important;
 .nav-link{
     color: #cccccc !important;
 }
+
+.user-detail-tab-container  .nav-tabs .nav-link:hover{
+    border: none;
+}
+
+.user-detail-tab-container  .nav-tabs .nav-link:focus{
+    background-color: white !important;
+}
+
+
+/* Table Status */
+
+.crop_active_status{
+    background-color: rgb(165, 233, 113);
+    text-align: center;
+    border-radius: 4px;
+    color: rgb(82, 119, 54);
+    padding: 2px 0;
+}
+
+.crop_pending_status{
+    background-color: rgb(255, 204, 0);
+    text-align: center;
+    border-radius: 4px;
+    color: rgb(82, 119, 54);
+    padding: 2px 0;
+}
+
+/* Switch Statment */
+.crop_table_switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 34px;
+}
+  
+.crop_table_switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.crop_table_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.crop_table_slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .crop_table_slider {
+    background-color: rgb(165, 233, 113);
+}
+  
+input:focus + .crop_table_slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .crop_table_slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.crop_table_slider.round {
+    border-radius: 34px;
+}
+  
+.crop_table_slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 990px){
+    .user-detail-container{
+        margin-left: 40px;
+    }
+}
+
 @media only screen and (max-width: 37.5em){
     .user-detail-name{
         display: block;
     }
+
+    
 }
+
 
 @media (max-width:500px){
     .personal_info_wrrapeer{
@@ -278,5 +376,27 @@ color: rgb(82, 119, 54)!important;
     .user_contact_btn {
         border: none;
         background-color: transparent;
+    }
+
+    .crop_table_heading{
+        font-size: 12px;
+    }
+
+    .crop_table_data{
+        font-size: 12px;
+    }
+    .crop_active_status{
+        font-size: 12px;
+    }
+    .crop_pending_status{
+        font-size: 12px;
+    }
+    .slider:before{
+        height: 15px;
+        width: 15px;
+    }
+    .crop_table_switch{
+        height: 30px;
+        width: 50px;
     }
 }
