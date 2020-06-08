@@ -17,7 +17,7 @@ class ProfileContainer extends Component {
     };
   }
 
-  onStarClick(nextValue, prevValue, name) {
+  onStarClick(nextValue) {
     this.setState({ rating: nextValue });
   }
   render() {
